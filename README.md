@@ -1,24 +1,25 @@
 # depth-anything-v2-ort
 
-This is a [ort](https://github.com/pykeio/ort) ( (Rust)[https://www.rust-lang.org/] binding for (ONNX Runtime)[https://onnx.ai/] ) implementation of (Depth-Anything-V2)[https://github.com/DepthAnything/Depth-Anything-V2], it depends on (Depth-Anything-Android)[https://github.com/shubham0204/Depth-Anything-Android] model.
+This is a [ort](https://github.com/pykeio/ort) ( Rust binding for ONNX Runtime ) implementation of [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2), it depends on [Depth-Anything-Android](https://github.com/shubham0204/Depth-Anything-Android) model.
  
 ## how to build and run
 
-1. install rust
+### install rust
 https://www.rust-lang.org/tools/install
 
-2 clone the repository
-    git clone xxxx
+### clone the repository
+
+    git clone https://github.com/h416/depth-anything-v2-ort.git
     cd depth-anything-v2-ort
 
-3 download model
-`wget https://github.com/shubham0204/Depth-Anything-Android/releases/download/model-v2/fused_model_uint8.onnx`
+### download model
 
-4 build
-`cargo build --release`
+    wget https://github.com/shubham0204/Depth-Anything-Android/releases/download/model-v2/fused_model_uint8.onnx
 
-5 run
-`./target/release/depth-anything-v2-ort fused_model_uint8.onnx input.jpg output.png`
+### build
 
+    cargo build --release
 
+### run
 
+    ./target/release/depth-anything-v2-ort fused_model_uint8.onnx input.jpg output.png
