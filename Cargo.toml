@@ -1,0 +1,9 @@
+[package]
+name = "ortapp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+ndarray = "0.16"
+ort = { git = "https://github.com/pykeio/ort.git", rev = "08aaa0ffabf597eb97514180460de65bd1bf9938", default-features = false, features = ["ndarray","download-binaries", "copy-dylibs"]}
