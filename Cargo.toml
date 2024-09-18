@@ -6,5 +6,5 @@ edition = "2021"
 [dependencies]
 image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
 ndarray = "0.16"
-#ort = { git = "https://github.com/pykeio/ort.git", rev = "08aaa0ffabf597eb97514180460de65bd1bf9938", default-features = false, features = ["ndarray","download-binaries", "copy-dylibs"]}
-ort = { version = "2.0.0-rc.5", default-features = false, features = ["ndarray", "download-binaries", "copy-dylibs"]}
+num_cpus = "1.16.0"
+ort = { version = "2.0.0-rc.6", default-features = false, features = ["ndarray", "download-binaries", "copy-dylibs"]}

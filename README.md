@@ -14,7 +14,7 @@ https://www.rust-lang.org/tools/install
 
 ### download model
 
-    wget https://github.com/fabio-sim/Depth-Anything-ONNX/releases/download/v2.0.0/depth_anything_v2_vitl.onnx
+    wget https://github.com/fabio-sim/Depth-Anything-ONNX/releases/download/v2.0.0/depth_anything_v2_vitl_dynamic.onnx
 
 ### build
 
@@ -22,4 +22,4 @@ https://www.rust-lang.org/tools/install
 
 ### run
 
-    ./target/release/depth-anything-v2-ort depth_anything_v2_vitl.onnx input.jpg output.png
+    ./target/release/depth-anything-v2-ort depth_anything_v2_vitl_dynamic.onnx input.jpg output.png
