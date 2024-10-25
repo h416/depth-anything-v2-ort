@@ -7,4 +7,4 @@ edition = "2021"
 image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
 ndarray = "0.16"
 num_cpus = "1.16.0"
-ort = { version = "2.0.0-rc.6", default-features = false, features = ["ndarray", "download-binaries", "copy-dylibs"]}
+ort = "2.0.0-rc.7"
