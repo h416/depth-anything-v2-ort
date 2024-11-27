@@ -1,6 +1,9 @@
 use image::{imageops::FilterType, DynamicImage, GenericImageView};
 
-use ort::{inputs, CUDAExecutionProvider, Session, SessionOutputs};
+use ort::execution_providers::CUDAExecutionProvider;
+use ort::inputs;
+use ort::session::builder::GraphOptimizationLevel;
+use ort::session::{Session, SessionOutputs};
 
 fn load_image(
     path: &str,
@@ -106,7 +109,7 @@ fn main() -> ort::Result<()> {
     {
         let num_cpus = num_cpus::get();
         let model = Session::builder()?
-            .with_optimization_level(ort::GraphOptimizationLevel::Level3)?
+            .with_optimization_level(GraphOptimizationLevel::Level3)?
             .with_intra_threads(num_cpus)?
             .commit_from_file(model_path)?;
 
